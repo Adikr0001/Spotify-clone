@@ -51,11 +51,72 @@ nav ul li{
 .icons{
     margin-top:14px ;
 }
+
+.icons i{
+    cursor: pointer;
+}
 .container{
-    min-height: 75vh;
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px ;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
 }
 
 #myProgressBar{
     width: 80vw;
     text-align: center;
+}
+
+.songItemContainer{
+    margin-top: 34px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    max-width: 400px; /* Adjust as needed */
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between; /* Ensures both elements stay at opposite ends */
+    align-items: center; /* Ensures vertical alignment */
+    border-radius: 34px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px 0;
+    border-radius: 34px;
+
+}
+
+.timestamp{
+    flex-shrink: 0; /* Prevents timestamp from shrinking */
+    white-space: nowrap; /* Prevents wrapping */
+    margin-left: 10px;
+
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 0
+    ;
 }
